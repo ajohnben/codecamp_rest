@@ -2,9 +2,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.accesshq</groupId>
-    <artifactId>code-camp</artifactId>
+    <artifactId>rest-test</artifactId>
     <version>0.1</version>
-    <name>Code Camp</name>
+    <name>Rest Test</name>
     <description>Code Camp Demo</description>
 
     <properties>
@@ -15,6 +15,7 @@
         <selenium.version>3.141.59</selenium.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+	<restAssured.version>4.4.0</restAssured.version>
     </properties>
 
     <dependencies>
@@ -44,6 +45,13 @@
             <artifactId>selenium-support</artifactId>
             <version>${selenium.version}</version>
         </dependency>
+	<!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
+	<dependency>
+    		<groupId>io.rest-assured</groupId>
+    		<artifactId>rest-assured</artifactId>
+    		<version>${restAssured.version}</version>
+    		<scope>test</scope>
+	</dependency>
     </dependencies>
     <build>
         <plugins>
